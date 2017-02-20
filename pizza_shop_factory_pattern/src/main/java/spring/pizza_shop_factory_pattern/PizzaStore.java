@@ -16,6 +16,11 @@ public class PizzaStore {
 		Pizaa pizza;
 		
 		pizza = SimplePizzaFactory.createPizza(type);
+		if(null == pizza)
+		{
+			System.out.println("?????NO SUCH PIZZA?????");
+			System.exit(0);
+		}
 
 		pizza.prepare();
 		pizza.bake();
